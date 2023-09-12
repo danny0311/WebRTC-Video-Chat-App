@@ -47,7 +47,7 @@ let init = async() => {
 
     client.on('MessageFromPeer', handleMessageFromPeer)
 
-    localStream = await navigator.mediaDevices.getUserMedia({constraints})
+    localStream = await navigator.mediaDevices.getUserMedia(constraints)
     document.getElementById('user-1').srcObject = localStream
 }
 
